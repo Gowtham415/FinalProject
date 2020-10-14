@@ -9,13 +9,13 @@ public class HomePageValidations extends ConfigurationClass {
 
 	@Test
 	public void getTitleOfHomePage() {
-		Assert.assertEquals(fpo.selenium().HOMEPAGE.getTitle(), "Home - Anna University", "Title is not correct!");
+		Assert.assertEquals(AnnaUniv.selenium().HOMEPAGE.getTitle(), "Home - Anna University", "Title is not correct!");
 	}
 
-	@Test
+	@Test()
 	public void getTitleOfdepartmentsPage() throws InterruptedException {
-		fpo.selenium().HOMEPAGE.clickDepartments();
-		String actual = fpo.selenium().DEPARTMENTSPAGE.getTitle();
+		AnnaUniv.selenium().HOMEPAGE.clickDepartments();
+		String actual = AnnaUniv.selenium().DEPARTMENTSPAGE.getTitle();
 		Assert.assertEquals(actual, "Anna University - Departments", "Title did not match");
 	}
 }

@@ -1,6 +1,5 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="FinalProject" parallel="classes">
-
 	<test name="InitialTest">
 		<parameter name="browser" value="chrome"/>
 		<classes>

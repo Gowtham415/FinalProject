@@ -16,7 +16,7 @@ public class ConfigurationClass{
 	protected ThreadLocal<WebDriver> threadLocalDriver = new ThreadLocal<WebDriver>();
 	public static WebDriver driver;
 	public BasePage basePage;
-	public FinalProjectObject fpo;
+	public FinalProjectObject AnnaUniv;
 	
 	public String BROWSER;
 	
@@ -34,7 +34,7 @@ public class ConfigurationClass{
 		}
 		driver = threadLocalDriver.get();
 		driver.manage().window().maximize();
-		fpo = new FinalProjectObject(driver);
+		AnnaUniv = new FinalProjectObject(driver);
 		driver.get("https://annauniv.edu/");
 	}
 
